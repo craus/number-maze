@@ -1,0 +1,128 @@
+each route starts and ends in habitated zone
+moving through route make all nodes habitated
+route must be as small as possible by both length and numbers
+
+	have 5
+5 -> 7 -> 5
+	exhausted 5 (1)
+	meet 7
+	have 7
+7 -> 11 -> 17 -> 13 -> 5
+	exhausted 7
+	meet 11
+	exhausted 11 (1)
+	meet 17
+	meet 13
+	have 17 13
+13 -> 19 -> 7
+	exhausted 13
+	meet 19
+	have 17 19
+17 -> 25 -> 19
+	exhausted 17
+	meet 25
+	have 19 25
+19 -> 29 -> 11
+	exhausted 19
+	meet 29
+	have 25 29
+25 -> 37 -> 7
+	exhausted 25
+	meet 37
+	have 29 37
+29 -> 43 -> 65 -> 49 -> 37
+	exhausted 29 
+	meet 43
+	exhausted 43 (1)
+	meet 65
+	meet 49
+	have 37 65 49
+37 -> 55 -> 41 -> 31 -> 23 -> 17
+	exhausted 37
+	meet 55
+	meet 41
+	meet 31
+	meet 23
+	have 65 49 55 41 31 23
+23 -> 35 -> 13
+	exhausted 23
+	meet 35
+	have 65 49 55 41 31 35
+31 -> 47 -> 35
+	exhausted 31
+	meet 47
+	have 65 49 55 41 35 47
+35 -> 53 -> 5
+	exhausted 35
+	meet 53
+	have 65 49 55 41 47 53
+41 -> 61 -> 23
+	exhausted 41
+	meet 61
+	have 65 49 55 47 53 61
+47 -> 71 -> 53
+	exhausted 47
+	meet 71
+	have 65 49 55 53 61 71
+49 -> 73 -> 55
+	exhausted 49
+	meet 73
+	have 65 55 53 61 71 73
+55 -> 83 -> 31
+	exhausted 55
+	meet 83
+	have 65 53 61 71 73 83
+61 -> 91 -> 17
+	exhausted 61
+	meet 91
+	have 65 53 71 73 83 91
+65 -> 97 -> 73
+	exhausted 65
+	meet 97
+	have 53 71 73 83 91 97
+71 -> 107 -> 5
+	exhausted 71
+	meet 107
+	have 53 73 83 91 97 107
+73 -> 109 -> 41
+	exhausted 73
+	meet 109
+	have 53 83 91 97 107 109
+83 -> 125 -> 47
+	exhausted 83
+	meet 125
+	have 53 91 97 107 109 125
+97 -> 145 -> 109
+	exhausted 97
+	meet 145
+	have 53 91 107 109 125 145
+109 -> 163 -> 61
+	exhausted 109
+	meet 163
+	have 53 91 107 125 145 163
+125 -> 187 -> 35
+	exhausted 125
+	meet 187
+	have 53 91 107 145 163 187
+145 -> 217 -> 163
+	exhausted 145
+	meet 217
+	have 53 91 107 163 187 217
+
+107 -> 161 -> 121 -> 91
+91 -> 137 -> 103 -> 77 -> 29
+53 -> 79 -> 59 -> 11
+
+
+
+
+
+
+
+
+
+
+
+
+
+
