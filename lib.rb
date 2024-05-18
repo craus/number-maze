@@ -132,8 +132,6 @@ def move x
 	cur
 end
 
-
-
 def chain x, n = 10
 	(0..n).map{|i| up x, i}
 end
@@ -149,6 +147,20 @@ end
 
 def back x, n = 1
 	backs(x, 2*n+3)[n-1]
+end
+
+def traceBack x, n = 1
+  (1..n).map{|i| x; x = back x}.reverse
+end
+
+def traceBackFrom x, n = 5
+  result = []
+  while x != n do
+    result << x
+    x = back x
+  end
+  result << x
+  result.reverse
 end
 
 def chainDown x, n = 10
