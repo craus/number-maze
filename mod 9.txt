@@ -1,0 +1,28 @@
+mod 9
+
+you  j0   j1   j2
+x1   x2   x4   x8
+
+0    0 -  0 -  0 -
+1    2    4    8 *
+2    4    8 *  7
+3    6 -  3 -  6 -
+4    8 *  7    5
+5    1 *  2    4
+6    3 -  6 -  3 -
+7    5    1 *  2
+8    7    5    1 *
+
+
+1 -> 2 -> 4 -> 8 -> 7 -> 5 -> 1 -> ...
+*              *              *
+j2b  j1b  j0b  j2b  j1b  j0b  j2b
+
+jump 0 blocked: 4, 5
+jump 1 blocked: 2, 7
+jump 2 blocked: 1, 8
+
+jump 0 ready: 1, 2, 8, 7
+jump 1 ready: 1, 4, 8, 5
+jump 2 ready: 2, 4, 7, 5
+

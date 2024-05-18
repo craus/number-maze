@@ -12,6 +12,10 @@ def bans
 	@goals + [@pos]
 end
 
+def rndPos n = 100
+	(1 + Random.rand(n)) * 6 - 1 + 2 * Random.rand(2)
+end
+
 def rndGoal 
 	x = 5
 	while rand > @goalStop || bans.include?(x)

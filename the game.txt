@@ -1,0 +1,18 @@
+1 win
+2 lose
+4 win
+8 lose
+16 win
+5 lose
+
+1 lose
+2 win
+4 lose
+8 win
+16 lose
+32 win
+11 lose
+22 win
+7 lose
+14 win
+5 lose
