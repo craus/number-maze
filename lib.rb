@@ -414,6 +414,33 @@ def chain x, n = 10
 	(0..n).map{|i| up x, i}
 end
 
+def prev x, n = 1
+	x *= (2**n)
+	x % 3 == 1 ? (x-1)/3 : (x+1)/3
+end
+
+def backs x, n = 10, filtered = true
+	(1..n).map{|i| prev x, i}.select{|y| y%3 != 0}
+end
+
+def back x, n = 1
+	backs(x, 2*n+3)[n-1]
+end
+
+def traceBack x, n = 1
+  (1..n).map{|i| x; x = back x}.reverse
+end
+
+def traceBackFrom x, n = 5
+  result = []
+  while x != n do
+    result << x
+    x = back x
+  end
+  result << x
+  result.reverse
+end
+
 def chainDown x, n = 10
 	print chain(x, n).map{|x| "#{x} -> #{down x}"}.join("\n")
 	print "\n"
