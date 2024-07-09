@@ -1,0 +1,32 @@
+5     damaged    son
+7     damaged   cycle+grandson x2    rhombus   drop
+11    damaged    son
+13  rhombus classic
+17  rhombus classic
+19  rhombus classic
+23  rhombus   drop
+25  rhombus   drop
+29    damaged     grandson up        rhombus   drop
+31  rhombus classic
+35  rhombus   drop
+37                    crossroads
+41  rhombus   drop
+43    damaged    son
+47  rhombus classic
+49  rhombus classic
+53    damaged     grandson  down         crossroads
+55  rhombus   drop
+59    damaged     grandson  down         crossroads
+61  rhombus   drop
+65  rhombus classic
+67  rhombus   drop
+71  rhombus   drop
+73  rhombus   drop
+77  rhombus classic
+79  rhombus classic
+83  rhombus classic
+85    damaged    son
+89  rhombus   drop
+91                    crossroads
+95  rhombus classic
+97  rhombus classic
